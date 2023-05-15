@@ -6,7 +6,7 @@ function Projects({propref}) {
             <p className="md:text-6xl text-3xl font-black text-stroke-1 mb-4 text-[#121212]">My Projects</p>
             <div className="grid sm:grid-cols-2 xl:grid-cols-4 md:grid-cols-3 gap-4 justify-items-center items-center grid-cols-1">
                 
-            <ProjCard url="https://github.com/malek0x00/portfolio" name="This Portfolio" description="The source code for this portfolio, built and hosted on the vercel platform" technologies="NextJS, tailwind CSS" image={require("../../../public/vercel-logo.png")} />
+                <ProjCard url="https://github.com/malek0x00/portfolio" name="This Portfolio" description="The source code for this portfolio, built and hosted on the vercel platform" technologies="NextJS, tailwind CSS" image={require("../../../public/vercel-logo.png")} />
                 
                 <ProjCard url="https://s7equityinvestors.ca/" name="S7equity Investors portal" description="Development of a mobile and web app for the investors of the real estate investment company S7equity." technologies="React Native, expo" image={require("../../../public/s7logo.png")} />
 

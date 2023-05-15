@@ -10,6 +10,9 @@ import { useRef } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  console.log("chay, mafama chy 😢😢")
+  console.log("7atta el easter egg mazelt ma implementit'hech ")
+  console.log("ye5i msayab kol chy w jey lel console enti ??????")
   const projectsref = useRef(null)
   const homeref = useRef(null)
   const contactref = useRef(null)

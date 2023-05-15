@@ -50,7 +50,7 @@ function ProjCard({name,description,technologies,image, nopadding=false,url}){
 
 function GithubCard(){
     return (
-        <div className="w-60 h-60 bg-white relative group mb-4">
+        <div className="w-60 h-60 bg-white relative group">
             <div className="absolute transition-all p-4 h-full w-full flex items-center group-hover:blur-md">
                 <Image width={240} height="240" alt="logo" src={require("../../../public/github-mark.png")} className="transition-all"></Image>
             </div>

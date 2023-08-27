@@ -9,6 +9,7 @@ function About({propref}) {
                     <TimelineCardContent fromyear={2018} toyear={2021} name="Higher School of Science and Technology of Hammam Sousse" degree="Bachelor degree in science and technology of information and communication" />
                 </AboutCard>
                 <AboutCard title="Experience" >
+                <TimelineCardContent hasNext fromyear="Jun '23" toyear="Sep '23" name="Envast" degree="Mobile Development Internship" />
                     <TimelineCardContent hasNext fromyear="Oct '22" toyear="Jan '23" name="Enterprise eSolutions" degree="Web Development half-time job" />
                     <TimelineCardContent hasNext fromyear="Jul '22" toyear="Aug '22" name="Enterprise eSolutions" degree="Web Development Internship" />
                     <TimelineCardContent hasNext fromyear="Feb '22" toyear="May '22" name="Tunisian Modern Newspaper" degree="Web Development Internship" />
@@ -17,7 +18,7 @@ function About({propref}) {
                 <AboutCard title="Skills" >
                     <div className="w-full h-full px-2 pt-4 ">
                         <p className="text-base font-bold">Frameworks & Libraries</p>
-                        <div className="ml-4">
+                        <div className="ml-4 flex gap-2 flex-col mt-2">
                         <li className="text-sm font-light">ReactJS</li>
                         <li className="text-sm font-light">NextJS</li>
                         <li className="text-sm font-light">Tailwind CSS</li>
@@ -28,7 +29,7 @@ function About({propref}) {
                         <li className="text-sm font-light">prisma</li>
                         </div>
                         <p className="text-base font-bold mt-4">DBMS</p>
-                        <div className="ml-4">
+                        <div className="ml-4 flex gap-2 flex-col mt-2">
                             <li className="text-sm font-light">MongoDB</li>
                             <li className="text-sm font-light">MySQL</li>
                         </div>

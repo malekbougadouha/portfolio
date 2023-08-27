@@ -14,9 +14,11 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   
    
-  console.log("chay, mafama chy 😢😢")
-  console.log("7atta el easter egg mazelt ma implementit'hech ")
-  console.log("ye5i msayab kol chy w jey lel console enti ??????")
+  // console.log("chay, mafama chy 😢😢")
+  // console.log("7atta el easter egg mazelt ma implementit'hech ")
+  // console.log("ye5i msayab kol chy w jey lel console enti ??????")
+  console.log("👀 bombastic side-eye \n version 23.8.27")
+
   const projectsref = useRef(null)
   const homeref = useRef(null)
   const contactref = useRef(null)
@@ -33,8 +35,8 @@ export default function Home() {
           type: "website",
           url: "https://malekbougadouha.vercel.app/",
           description:
-            "The personal website for Malek Bougadouha, a web and mobile developer.",
-          site_name: "Malek Bougadouha - Portfolio",            
+            "My portfolio website, built with Next.js and TailwindCSS",
+          site_name: "Malek Bougadouha - Personal Portfolio",
           }}
           robotsProps={{
             nosnippet: true,

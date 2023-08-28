@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
 
@@ -30,7 +31,8 @@ const TEXTS = ["web","mobile", "react"];
     
     return ( 
         <>
-        <div ref={propref} className="w-full h-screen md:pl-12 pl-6 flex justify-center text flex-col">
+        <Image alt="logo" className="fixed -top-24 -z-10 left-0 opacity-20" src={require("../../../public/logo_nobg_light.png")} />
+        <div ref={propref} className="z-10 w-full h-screen md:pl-12 pl-6 flex justify-center text flex-col">
             <p className={`lg:text-7xl md:text-5xl text-3xl font-black text-stroke-1 text-[#121212]`}>Hi there,</p>
             <p className="lg:text-7xl md:text-5xl text-3xl font-black ">i{"'"}m Malek Bougadouha,</p>
             <div className="flex gap-2 lg:gap-4 flex-wrap">

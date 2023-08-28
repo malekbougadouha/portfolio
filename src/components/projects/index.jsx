@@ -8,7 +8,7 @@ function Projects({propref}) {
                 
             <ProjCard url="#" name="ESS Mobile App" description="Development of the mobile app for ESS football team" technologies="React Native, expo" image={require("../../../public/ess.png")} />
                 
-                <ProjCard url="https://github.com/malek0x00/portfolio" name="This Portfolio" description="The source code for this portfolio, built and hosted on the vercel platform" technologies="NextJS, tailwind CSS" image={require("../../../public/vercel-logo.png")} />
+                <ProjCard url="https://github.com/malek0x00/portfolio" name="This Portfolio" description="The source code for this portfolio, built and hosted on the vercel platform" technologies="NextJS, tailwind CSS" image={require("../../../public/logo_light.png")} />
                 
                 <ProjCard url="https://s7equityinvestors.ca/" name="S7equity Investors portal" description="Development of a mobile and web app for the investors of the real estate investment company S7equity." technologies="React Native, expo" image={require("../../../public/s7logo.png")} />
 

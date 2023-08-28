@@ -24,7 +24,7 @@ function ContactMe({propref}) {
 
 function InfoItem({icon, text, link}){
     return(
-        <div onClick={()=>{window.open(link,"_blank")}} className=" w-70 h-16 flex flex-row items-center justify-start  cursor-pointer transition-all p-2 hover:scale-105">
+        <div onClick={()=>{window.open(link,"_blank")}} className="clickableitem w-70 h-16 flex flex-row items-center justify-start  transition-all p-2 hover:scale-105">
             <div className="w-12 h-12 mr-2 bg-lime-100 rounded-full flex items-center justify-center">{icon}</div>
             <p className="text-xs font-semibold">{text}</p>
         </div>

@@ -9,7 +9,8 @@ function About({propref}) {
                     <TimelineCardContent fromyear={2018} toyear={2021} name="Higher School of Science and Technology of Hammam Sousse" degree="Bachelor degree in science and technology of information and communication" />
                 </AboutCard>
                 <AboutCard title="Experience" >
-                <TimelineCardContent hasNext fromyear="Jun '23" toyear="Sep '23" name="Envast" degree="Mobile Development Internship" />
+                    <TimelineCardContent hasNext fromyear="Feb '24" toyear="Jun '24" name="Envast" degree="Web & Mobile Development Internship" />
+                    <TimelineCardContent hasNext fromyear="Jun '23" toyear="Sep '23" name="Envast" degree="Mobile Development Internship" />
                     <TimelineCardContent hasNext fromyear="Oct '22" toyear="Jan '23" name="Enterprise eSolutions" degree="Web Development half-time job" />
                     <TimelineCardContent hasNext fromyear="Jul '22" toyear="Aug '22" name="Enterprise eSolutions" degree="Web Development Internship" />
                     <TimelineCardContent hasNext fromyear="Feb '22" toyear="May '22" name="Tunisian Modern Newspaper" degree="Web Development Internship" />
@@ -25,8 +26,9 @@ function About({propref}) {
                         <li className="text-sm font-light">React Native</li>
                         <li className="text-sm font-light">expo</li>
                         <li className="text-sm font-light">NodeJS</li>
+                        <li className="text-sm font-light">Socket.IO</li>
                         <li className="text-sm font-light">express</li>
-                        <li className="text-sm font-light">prisma</li>
+                        <li className="text-sm font-light">prisma ORM</li>
                         </div>
                         <p className="text-base font-bold mt-4">DBMS</p>
                         <div className="ml-4 flex gap-2 flex-col mt-2">

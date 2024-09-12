@@ -5,8 +5,10 @@ function Projects({propref}) {
         <div ref={propref} className="w-full h-auto md:pl-12 px-6 flex pt-6 text flex-col">
             <p className="md:text-6xl text-3xl font-black text-stroke-1 mb-4 text-[#121212]">My Projects</p>
             <div className="grid sm:grid-cols-2 xl:grid-cols-4 md:grid-cols-3 gap-4 justify-items-center items-center grid-cols-1">
-                
-            <ProjCard url="#" name="ESS Mobile App" description="Development of the mobile app for ESS football team" technologies="React Native, expo" image={require("../../../public/ess.png")} />
+            
+                <ProjCard url="#" name="BystroSync" description="A mobile app for online restaurant reservations and pre-orders" technologies="React Native, expo, nextJS, nodeJS, socket.IO" image={require("../../../public/splash.png")} />
+                  
+                <ProjCard url="#" name="ESS Mobile App" description="Development of the mobile app for ESS football team" technologies="React Native, expo" image={require("../../../public/ess.png")} />
                 
                 <ProjCard url="https://github.com/malek0x00/portfolio" name="This Portfolio" description="The source code for this portfolio, built and hosted on the vercel platform" technologies="NextJS, tailwind CSS" image={require("../../../public/logo_light.png")} />
                 

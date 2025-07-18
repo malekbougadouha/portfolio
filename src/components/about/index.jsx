@@ -13,7 +13,7 @@ function About({ propref }) {
           <TimelineCardContent
             hasNext
             fromyear={2021}
-            toyear="present"
+            toyear={2024}
             name="Polytechnic School of Sousse"
             degree="software engineering degree"
           />
@@ -27,10 +27,17 @@ function About({ propref }) {
         <AboutCard title="Experience">
           <TimelineCardContent
             hasNext
-            fromyear="Oct '24"
+            fromyear="Jun '25"
             toyear="Now"
+            name="Tactix Solutions"
+            isCurrently
+            degree="Web Developer"
+          />
+          <TimelineCardContent
+            hasNext
+            fromyear="Oct '24"
+            toyear="Mar '25"
             name="Creo"
-            isCurrenlty
             degree="Web Developer"
           />
           <TimelineCardContent
@@ -62,7 +69,6 @@ function About({ propref }) {
             degree="Web Development Internship"
           />
           <TimelineCardContent
-            hasNext
             fromyear="Feb '22"
             toyear="May '22"
             name="Tunisian Modern Newspaper"
@@ -113,12 +119,12 @@ function TimelineCardContent({
   toyear,
   name,
   degree,
-  isCurrenlty = false,
+  isCurrently = false,
 }) {
   return (
     <div className="w-full pt-4">
       <div className="w-1/2 h-6 bg-lime-500 rounded-full flex items-center justify-center">
-        {isCurrenlty ? (
+        {isCurrently ? (
           <p className="text-[#1e1e1e] font-semibold text-xs">Currently</p>
         ) : (
           <p className="text-[#1e1e1e] font-semibold text-xs">

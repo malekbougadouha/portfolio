@@ -13,7 +13,7 @@ import dynamic from "next/dynamic";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  console.log("👀 bombastic side-eye \n version 25.2.18");
+  console.log("👀 bombastic side-eye \n version 25.7.18");
 
   const projectsref = useRef(null);
   const homeref = useRef(null);

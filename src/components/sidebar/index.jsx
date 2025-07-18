@@ -13,7 +13,7 @@ function Sidebar({ homeref, aboutref, projectsref, contactref }) {
 
 function SidebarButton({ name, propref }) {
   return (
-    <div className="w-full h-32 flex items-center justify-center">
+    <div className="w-full h-32 flex items-center group justify-center">
       <p
         onClick={() => {
           propref.current.scrollIntoView({
@@ -21,7 +21,7 @@ function SidebarButton({ name, propref }) {
             block: "start",
           });
         }}
-        className="clickableitem text-sm md:text-base rotate-[270deg] font-semibold text-[#121212]"
+        className="clickableitem text-sm md:text-base group-hover:text-[#121212]/70 transition-colors cursor-pointer rotate-[270deg] font-semibold text-[#121212]"
       >
         {name}
       </p>

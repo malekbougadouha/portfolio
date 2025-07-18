@@ -68,7 +68,7 @@ export default function Home() {
         }}
       />
       {/* start sidebar */}
-      <div className="fixed h-screen bg-lime-500 md:w-32 w-16">
+      <div className="fixed h-full bg-lime-500 w-16 lg:w-32 ">
         <Sidebar
           homeref={homeref}
           aboutref={aboutref}

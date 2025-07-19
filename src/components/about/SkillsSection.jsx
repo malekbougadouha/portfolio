@@ -24,13 +24,13 @@ function SkillsSection() {
         {Object.entries(skillsData).map(([category, skills]) => (
           <div key={category}>
             <p className="text-base font-bold mt-4 first:mt-0">{category}</p>
-            <div className="ml-4 flex gap-2 flex-col mt-2">
+            <ul className="ml-4 flex gap-2 flex-col mt-2">
               {skills.map((skill, index) => (
                 <li key={index} className="text-sm font-light">
                   {skill}
                 </li>
               ))}
-            </div>
+            </ul>
           </div>
         ))}
       </div>

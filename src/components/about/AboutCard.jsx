@@ -1,8 +1,10 @@
 function AboutCard({ title, children }) {
   return (
-    <div className="w-full max-w-[288px]">
-      <p className="text-lime-400 font-light text-sm">{title}</p>
-      <div className="bg-[#1e1e1e] w-72 mt-2 pb-4 px-4">{children}</div>
+    <div className=" flex-shrink">
+      <p className="text-lime-400 font-light pl-1 text-sm">{title}</p>
+      <div className="bg-[#1e1e1e] ml-2 max-w-[278px] min-w-[268px] w-full mt-2 pb-4 px-4">
+        {children}
+      </div>
     </div>
   );
 }

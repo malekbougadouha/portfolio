@@ -33,7 +33,7 @@ function HomePage({ propref, contactref }) {
       <RotatingCube className="fixed -top-24 -z-10 left-0 opacity-20" />
       <div
         ref={propref}
-        className="z-10 w-full h-screen md:pl-12 pl-6 flex justify-center text flex-col"
+        className="z-10 w-full h-screen md:pl-12 pl-3 sm:pl-6 flex justify-center text flex-col"
       >
         <p
           className={`lg:text-7xl md:text-5xl text-3xl font-black text-stroke-1 text-[#121212]`}

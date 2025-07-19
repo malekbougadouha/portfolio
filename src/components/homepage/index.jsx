@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
+import RotatingCube from "../rotatingCube";
 
 function HomePage({ propref, contactref }) {
   const downloadFile = async () => {
@@ -29,14 +30,10 @@ function HomePage({ propref, contactref }) {
 
   return (
     <>
-      <Image
-        alt="logo"
-        className="fixed -top-24 -z-10 left-0 opacity-20"
-        src={require("../../../public/logo_nobg_light.png")}
-      />
+      <RotatingCube className="fixed -top-24 -z-10 left-0 opacity-20" />
       <div
         ref={propref}
-        className="z-10 w-full h-screen md:pl-12 pl-6 flex justify-center text flex-col"
+        className="z-10 w-full h-screen md:pl-12 px-3 sm:px-6 flex justify-center text flex-col"
       >
         <p
           className={`lg:text-7xl md:text-5xl text-3xl font-black text-stroke-1 text-[#121212]`}
@@ -60,7 +57,7 @@ function HomePage({ propref, contactref }) {
             developer.
           </p>
         </div>
-        <div className="flex gap-4 ">
+        <div className="flex gap-4 flex-col sm:flex-row mt-8">
           <button
             onClick={() => {
               contactref.current.scrollIntoView({
@@ -68,7 +65,7 @@ function HomePage({ propref, contactref }) {
                 block: "start",
               });
             }}
-            className="lg:w-48 lg:h-16 md:w-40 md:h-14  w-36 h-12 lg:text-base text-sm text-lime-500 hover:bg-lime-500 hover:text-[#121212] transition-all active:scale-95 bg-[#121212] border-2 border-lime-500 mt-9 flex justify-center items-center"
+            className="w-full sm:w-1/2 max-w-full sm:max-w-[250px]  h-12 lg:text-base text-sm text-lime-500 hover:bg-lime-500 hover:text-[#121212] transition-all active:scale-95 bg-[#121212] border-2 border-lime-500 flex justify-center items-center"
           >
             Contact Me
           </button>
@@ -76,7 +73,7 @@ function HomePage({ propref, contactref }) {
             onClick={() => {
               downloadFile();
             }}
-            className="lg:w-48 lg:h-16 md:w-40 md:h-14  w-36 h-12 lg:text-base text-sm text-lime-500 hover:bg-lime-500 hover:text-[#121212] transition-all active:scale-95 bg-[#121212] border-2 border-lime-500 mt-9 flex justify-center items-center"
+            className="w-full sm:w-1/2  max-w-full sm:max-w-[250px] h-12 lg:text-base text-sm text-lime-500 hover:bg-lime-500 hover:text-[#121212] transition-all active:scale-95 bg-[#121212] border-2 border-lime-500 flex justify-center items-center"
           >
             Checkout My CV
           </button>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import HomePage from "@/components/homepage";
 import Sidebar from "@/components/sidebar";
@@ -42,18 +41,19 @@ export default function Home() {
       <DefaultSeo
         title="Portfolio - Malek Bougadouha"
         titleTemplate="Portfolio - Malek Bougadouha"
+        description="Hi, I'm Malek Bougadouha! Welcome to my portfolio—here you'll find my work, my story, and what drives me. I love building creative digital experiences and tackling real-world challenges."
         openGraph={{
           type: "website",
           url: "https://malekbougadouha.vercel.app/",
           description:
-            "My portfolio website, built with Next.js and TailwindCSS",
+            "Hey, I'm Malek Bougadouha. Check out my personal portfolio to see my projects, my skills, and how I approach solving problems with code.",
           site_name: "Malek Bougadouha - Personal Portfolio",
           images: [
             {
-              url: "https://malekbougadouha.vercel.app/logo_dark.png",
-              width: 512,
-              height: 512,
-              alt: "Logo",
+              url: "https://malekbougadouha.vercel.app/og_image.png",
+              width: 1200,
+              height: 630,
+              alt: "Portfolio Open Graph Image",
             },
           ],
         }}
@@ -78,7 +78,7 @@ export default function Home() {
       </div>
       {/* end sidebar */}
       {/* start scrollable area */}
-      <div className="flex md:ml-32 ml-16 flex-grow flex-col ">
+      <div className="flex lg:ml-32 ml-16 flex-grow flex-col ">
         <HomePage propref={homeref} contactref={contactref} />
         <About propref={aboutref} />
         <Projects propref={projectsref} />

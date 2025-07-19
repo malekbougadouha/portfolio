@@ -1,11 +1,12 @@
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import Link from "next/link";
 
 function ContactMe({ propref }) {
   return (
     <div
       ref={propref}
-      className="w-full h-screen md:pl-12 mb-8 px-6 flex pt-6 text flex-col"
+      className="w-full h-screen md:pl-12 mb-8 px-3 sm:px-6  flex pt-6 text flex-col"
     >
       <p className="md:text-6xl text-3xl font-black text-stroke-1 my-4 text-[#121212]">
         Contact Me
@@ -42,17 +43,16 @@ function ContactMe({ propref }) {
 
 function InfoItem({ icon, text, link }) {
   return (
-    <div
-      onClick={() => {
-        window.open(link, "_blank");
-      }}
+    <Link
+      href={link}
+      target="_blank"
       className="clickableitem w-70 h-16 flex flex-row items-center justify-start  transition-all p-2 hover:scale-105"
     >
-      <div className="w-12 h-12 mr-2 bg-lime-100 rounded-full flex items-center justify-center">
+      <div className="w-12 h-12 mr-2 bg-white rounded-full flex items-center justify-center">
         {icon}
       </div>
       <p className="text-xs font-semibold">{text}</p>
-    </div>
+    </Link>
   );
 }
 

@@ -65,7 +65,7 @@ function HomePage({ propref, contactref }) {
                 block: "start",
               });
             }}
-            className="lg:w-48 lg:h-16 md:w-40 md:h-14  w-36 h-12 lg:text-base text-sm text-lime-500 hover:bg-lime-500 hover:text-[#121212] transition-all active:scale-95 bg-[#121212] border-2 border-lime-500 mt-9 flex justify-center items-center"
+            className="lg:w-48 lg:h-16 md:w-40 md:h-14  w-24 sm:w-36 h-12 lg:text-base text-sm text-lime-500 hover:bg-lime-500 hover:text-[#121212] transition-all active:scale-95 bg-[#121212] border-2 border-lime-500 mt-9 flex justify-center items-center"
           >
             Contact Me
           </button>

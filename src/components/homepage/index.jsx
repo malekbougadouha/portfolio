@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
+import RotatingCube from "./rotatingCube";
 
 function HomePage({ propref, contactref }) {
   const downloadFile = async () => {
@@ -29,11 +30,7 @@ function HomePage({ propref, contactref }) {
 
   return (
     <>
-      <Image
-        alt="logo"
-        className="fixed -top-24 -z-10 left-0 opacity-20"
-        src={require("../../../public/logo_nobg_light.png")}
-      />
+      <RotatingCube className="fixed -top-24 -z-10 left-0 opacity-20" />
       <div
         ref={propref}
         className="z-10 w-full h-screen md:pl-12 pl-6 flex justify-center text flex-col"

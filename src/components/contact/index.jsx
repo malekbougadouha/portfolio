@@ -48,7 +48,7 @@ function InfoItem({ icon, text, link }) {
       }}
       className="clickableitem w-70 h-16 flex flex-row items-center justify-start  transition-all p-2 hover:scale-105"
     >
-      <div className="w-12 h-12 mr-2 bg-lime-100 rounded-full flex items-center justify-center">
+      <div className="w-12 h-12 mr-2 bg-white rounded-full flex items-center justify-center">
         {icon}
       </div>
       <p className="text-xs font-semibold">{text}</p>

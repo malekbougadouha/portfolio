@@ -2,9 +2,9 @@ import { useRef, useEffect } from "react";
 
 const COLOR_BG = "#121212";
 const COLOR_CUBE = "#84CC16";
-const SPEED_X = 0.05; // rps
-const SPEED_Y = 0.15; // rps
-const SPEED_Z = 0.3; // rps
+const SPEED_X = 0.02; // rps
+const SPEED_Y = 0.07; // rps
+const SPEED_Z = 0.15; // rps
 
 function RotatingCube({ className }) {
   const canvasRef = useRef(null);

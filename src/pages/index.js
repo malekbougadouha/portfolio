@@ -78,7 +78,7 @@ export default function Home() {
       </div>
       {/* end sidebar */}
       {/* start scrollable area */}
-      <div className="flex md:ml-32 ml-16 flex-grow flex-col ">
+      <div className="flex lg:ml-32 ml-16 flex-grow flex-col ">
         <HomePage propref={homeref} contactref={contactref} />
         <About propref={aboutref} />
         <Projects propref={projectsref} />

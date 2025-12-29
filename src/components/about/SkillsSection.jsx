@@ -14,6 +14,9 @@ function SkillsSection() {
       "express",
       "NestJS",
       "prisma ORM",
+      "supabase",
+      "Sanity CMS",
+      "Jitsi",
     ],
     DBMS: ["MongoDB", "MySQL"],
   };
